@@ -1,13 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* margin: 0; */
+  font-family: 'Libre Baskerville', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(52, 99, 21);
+  background-image: url(assets/mountain.jfif);
+  background-position: center;
+  background-size: cover;
+  height: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  position: relative;
+  display: block;
+  align-items: center;
+}
+
+.title {
+  font-size: 5rem;
+  background-color: #0c0e1b5e;
+  color: whitesmoke;
+  padding: 15px;
+  letter-spacing: 2.9rem;
+  margin: 1rem auto;
+  width: 700px;
+  border-radius: 1rem;
+}
+
+.pomodoro-container {
+  color:whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pomodoro-container .labels {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding:.3rem .3rem;
+  border-radius: 1.5rem;
+}
+
+.stats {
+  display: block;
+  position: absolute;
+  right: 1%;
+  bottom: 0%;
+  color: whitesmoke;
+  background-color: #0c0e1b5e;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.timer-container {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+  width: 28rem;
+  border-radius: 50%;
+  color:#efefef;
+  font-size: 5.5rem;
+  box-shadow: 1.1rem 1.1rem 1.4rem rgba(0,0,0,0.5)
+}
+
+.active-timer {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem
+}
+
+button {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 3rem;
+  margin: 0.2rem;
+  background: #0c0e1b5e;
+  min-width: 80px;
+  cursor: pointer;
+  font-family: 'Libre Baskerville', serif;
+}
+
+button:hover {
+  background: #0c0e1baf;
+}
+
+.active-label {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.6rem 1.3rem;
+  text-transform: uppercase;
+  background: #0c0e1baf;
+}
+
+.submit-Btn {
+  color:whitesmoke;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  border:none;
+  border-radius: 3rem;
+  margin:0.2rem;
+  background:#0c0e1b5e;
+  min-width: 80px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.submit-Btn:hover {
+  background: #0c0e1baf;
+}
+
+.button-wrapper button.active {
+  color: #0C0E1B;
+  background-color: #D36135;
+  border: 1px solid #0C0E1B;
+}
+
+.form-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+form {
+  width: 400px;
+}
+
+.form-Btns {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-setting-fields-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem;
+}
+.time-setting-fields-wrapper input {
+  height: 30px;
+  width: 35px;
+  padding: 2rem;
+  background-color: #0c0e1b5e;
+  color:white;
+  border: none;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 0.2rem 1rem;
+}
+.time-setting-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.time-setting-field p {
+  font-size: 1.7rem;
 }
